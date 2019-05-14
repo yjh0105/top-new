@@ -1,0 +1,380 @@
+@charset "UTF-8";
+body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select, figure, figcaption {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "微软雅黑"; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: normal; }
+
+a, u {
+  text-decoration: none; }
+
+b, strong {
+  font-weight: normal; }
+
+i, em {
+  font-style: normal; }
+
+ul, ol, li {
+  list-style: none; }
+
+img {
+  display: block;
+  border: 0; }
+
+input {
+  outline: none;
+  border: 0; }
+
+.top {
+  height: 30px;
+  width: 100%;
+  border-bottom: 1px solid #ddd; }
+
+.top-left {
+  float: left;
+  width: 275px;
+  height: 100%;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+  margin-left: 357px; }
+
+.top-left p {
+  line-height: 30px;
+  text-align: center;
+  color: #999999;
+  font-size: 13px; }
+
+.top-left a {
+  color: #dc4f45; }
+
+.list {
+  float: right;
+  color: #999;
+  margin-right: 237px; }
+
+.list li {
+  float: left;
+  height: 14px;
+  margin: 8px 12px 0 12px;
+  border-right: 2px solid #999;
+  padding-right: 14px;
+  font-size: 13px; }
+
+.list li:nth-child(5) {
+  border-right: 0; }
+
+.head {
+  height: 99px;
+  width: 100%; }
+
+.head-1 {
+  margin: 0 auto;
+  width: 1150px;
+  height: 99px; }
+
+.head-left {
+  float: left;
+  margin-left: 480px;
+  height: 100px; }
+
+.head-left img {
+  width: 80px;
+  margin: 10px 10px 0 10px;
+  float: left; }
+
+.head-left p {
+  float: left;
+  color: #dc4f45;
+  line-height: 120px;
+  font-size: 22px;
+ }
+
+.head-right {
+  float: right;
+  width: 175px;
+  height: 40px;
+  margin-top: 40px; 
+  cursor:pointer}
+
+.shopp {
+  float: left;
+  width: 35px;
+  height: 35px;
+  background: url(../img/main.png) no-repeat 0 -29px; }
+
+.head-right p {
+  line-height: 35px;
+  color: #dc4f4c; }
+
+.menu {
+  width: 100%;
+  height: 60px;
+  background: #555;
+  margin-top: 20px; }
+
+.menu ul {
+  width: 1100px;
+  height: 60px;
+  margin: 0 auto; }
+
+.menu ul li {
+  width: 155px;
+  height: 60px;
+  float: left;
+  text-align: center;
+  line-height: 60px; }
+.menu ul li:nth-child(2){
+    background: url(../img/mao.jpg);
+    background-size: 155px 62px; 
+}
+.menu ul li:hover {
+  background: url(../img/mao.jpg);
+  background-size: 155px 62px; }
+
+.menu ul li:hover a {
+  color: red; }
+.menu ul li .whole{
+    color: red;
+}
+.menu ul li a {
+  color: #fff; }
+.show{
+    width: 1200px;
+    height: 1200px;
+    margin: 0 auto;
+    padding-top:20px;
+}
+.show-1{
+    width: 250px;
+    height: 345px;
+    float: left;
+    padding: 20px;
+    border: 2px solid #fff;
+}
+.show-1 img{
+    margin: 0 auto;
+}
+.show-1:hover{
+ border: 2px solid #666;
+ transition: 1s;
+}
+.show-1 h2{
+    color: #666;
+    line-height: 52px;
+    text-align: center;
+}
+.show-1 h3{
+    color: #de4f45;
+    line-height: 50px;
+    text-align: center;
+}
+.show-2 a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border:1px solid #666;
+    float: left;
+    text-align: center;
+    line-height: 20px;
+}
+.show-2{
+    margin-left:23px;
+}
+.show-2 input{
+    display: block;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    width: 50px;
+    float: left;
+    height: 22px;
+    text-align: center;
+}
+.join{
+   width: 95px;
+   height: 22px;
+   float: left;
+   background: #ccc;
+   line-height: 22px;
+   text-align: center;
+   font-size: 16px;
+   margin-left: 10px; 
+   cursor:pointer;
+}
+.show-2 a:hover{
+    color: #fff;
+    background: #666;
+}
+.join:hover{
+    background:#de4f45;
+}
+.adv {
+  width: 28px;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10; }
+
+.as {
+  height: 28px;
+  width: 25px;
+  position: absolute;
+  top: 113px; }
+
+.as-1 {
+  height: 28px;
+  width: 25px;
+  position: absolute;
+  top: 150px; }
+
+.adv-1 {
+  width: 28px;
+  height: 30px;
+  background: #000 url(../img/ico.png) no-repeat -4px -8px;
+  position: fixed;
+  z-index: 88; }
+
+.adv-2 {
+  z-index: 200;
+  width: 28px;
+  height: 30px;
+  position: fixed;
+  background: #000 url(../img/ico.png) no-repeat -4px -56px; }
+
+.adv-3 {
+  width: 21px;
+  height: 80px;
+  position: absolute;
+  top: 180px; }
+
+.gouwu-1 {
+  width: 21px;
+  height: 25px;
+  background: url(../img/ico.png) no-repeat -6px -144px; }
+
+.gouwu {
+  color: #fff;
+  font-size: 12px;
+  padding-left: 5px; }
+
+.hide-1 {
+  width: 100px;
+  height: 27px;
+  background: #dc4f4c;
+  padding-left: 15px;
+  border-radius: 25px 0 0 25px;
+  position: fixed;
+  top: 116px; }
+
+.hide-2 {
+  width: 100px;
+  height: 27px;
+  background: #dc4f4c;
+  padding-left: 15px;
+  border-radius: 25px 0 0 25px;
+  position: fixed;
+  top: 150px; }
+
+.hide-1 h6 {
+  color: #fff;
+  font-size: 12px;
+  line-height: 25px; }
+
+.hide-2 h6 {
+  color: #fff;
+  font-size: 12px;
+  line-height: 25px; }
+
+.adv-1:hover {
+  opacity: 0.8; }
+
+.adv-2:hover {
+  opacity: 0.8; }
+
+.adv-4 {
+  width: 21px;
+  height: 25px;
+  position: absolute;
+  bottom: 115px;
+  background: url(../img/ico.png) no-repeat -7px -186px; }
+
+.adv-5 {
+  width: 21px;
+  height: 25px;
+  position: absolute;
+  bottom: 80px;
+  background: url(../img/ico.png) no-repeat -7px -281px; }
+
+.adv-6 {
+  width: 21px;
+  height: 25px;
+  position: absolute;
+  bottom: 55px;
+  background: url(../img/ico.png) no-repeat -7px -321px; }
+  .link {
+    width: 100%;
+    height: 273px;
+    background: #e2e5e9; }
+  
+  .links {
+    margin: 0 auto;
+    width: 1050px; }
+  .link-1{
+    width: 200px;
+    height: 220px;
+    border-right: 1px solid #000;
+    padding-right: 20px;
+    float: left;
+  }
+  .feifed{
+    float: right;
+    width:87px;
+  }
+  .feifed li{
+    float: right;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .link-1 .feifed li:nth-child(1){
+    line-height: 40px;
+    margin-top: 10px;
+  }
+  .link-2{
+    width: 200px;
+    height: 220px;
+    float: left;
+    padding-left: 100px;
+  }
+  .link-2 h5{
+    font-size: 12px;
+    margin-top:20px;
+  }
+  .link-2 img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

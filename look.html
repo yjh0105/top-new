@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/look.css">
+</head>
+<body>
+    <!-- 顶部 -->
+    <div class='top' >
+            <div class="top-left">
+                <p>您好！请<a href="#">登录</a>或<a href="#">加入会员</a></p>
+            </div>
+            <ul class="list">
+                <li>礼金卡充值</li>
+                <li>如何订购</li>
+                <li>配送范围</li>
+                <li>提前预约时间</li>
+                <li>关于米卡米卡蛋糕</li>
+            </ul>
+        </div>
+        <!-- 订购 -->
+        <div class="head">
+            <div class="head-1">
+                <div class="head-left">
+                    <img src="img/erweima.png" >
+                    <p>订购电话：400-606-7757</p>
+                </div>
+                <div class="head-right">
+                    <div class="shopp"></div>
+                    <p>购物车(0)</p>
+                 </div>
+            </div>
+        </div>
+        <!-- 列表 -->
+        <div class="menu">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="buy.html">全部蛋糕</a></li>
+                <li><a href="#">下午茶19国</a></li>
+                <li><a href="#">企业专区</a></li>
+                <li><a href="#">蛋糕资讯</a></li>
+                <li><a href="#">会员中心</a></li>
+             <li><a href="#">关于米卡米卡</a></li>
+            </ul>
+        </div>
+        <!-- 购物车 -->
+        <div class="shop">
+            <div class="shop-1">
+                <div class="shopp"></div>
+                <p>购物车</p>
+            </div>
+            <div class="blank">
+                你的购物车空空如也~快去<a href="buy.html">挑选</a>吧
+            </div>
+            <!-- 商品表格 -->
+            <div class="table">
+            <table class="tab">
+                <tr class="index">
+                    <td >商品</td>
+                    <td>销售价</td>
+                    <td>数量</td>
+                    <td>合计</td>
+                </tr>
+                <!-- <tr class="index1">
+                    <td><img src="img/1ec003345c88b8d23acc228765364eb1.jpg" alt=""></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="index1">
+                        <td><img src="img/1ec003345c88b8d23acc228765364eb1.jpg" alt=""></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                </tr> -->
+            </table>
+            <div class="tab-bottom">
+                <div class="clear">清空购物车</div>
+                <div class="settle">结算商品</div>
+            </div>
+        </div>
+        </div>
+        <!-- 友情链接 -->
+    <div class="link">
+            <div class="links">
+                <div class="link-1">
+                    <ul class="feifed">
+                        <li>帮助中心</li>
+                        <li>如何订购</li>
+                        <li>配送范围</li> 
+                        <li>会员升级</li>
+                        <li>支付中心</li>
+                        <li>礼金卡使用说明</li>
+                    </ul>
+                </div>
+                <div class="link-1">
+                    <ul class="feifed">
+                        <li>公司简介</li>
+                        <li>关于米卡米卡</li>
+                        <li>品牌创始人</li> 
+                        <li>会员升级</li>
+                        <li>支付中心</li>
+                        <li>明星大咖</li>
+                        <li>最新新闻</li>
+                    </ul>
+                </div>
+                <div class="link-1">
+                    <ul class="feifed">
+                        <li>让我们成为朋友</li>
+                        <li>京东店铺</li>
+                        <li>淘宝店铺</li> 
+                        <li>新浪微博</li>
+                    </ul>
+                </div>
+                <div class="link-2">
+                    <h5>
+                    嗨！~你好，听说你喜欢我们好久了，来交个朋友吧~<br>
+                    扫描下方二维码<br>
+                    关注我们的微信公众号<br>
+                    微信下单有新人专享优惠券哦！
+                    </h5>
+                    <img src="img/7d154ab774e39df948801fad76aa94be.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 固定右侧广告栏 -->
+       
+        <div class="adv"> 
+            <div class="as">
+                <div class="hide-1"><h6>我的订单</h6></div> 
+                <div class="adv-1"></div>
+            </div>
+            <div class="as-1">
+                <div class="hide-2"><h6>全天派送</h6></div> 
+                <div class="adv-2"></div>
+            </div>
+            <div class="adv-3"> 
+                <div class="gouwu-1"></div>
+                <div class="gouwu">购<br>物<br>车</div>
+            </div>
+           <div class="adv-4"></div>
+           <div class="adv-5"></div>
+           <div class="adv-6"></div>
+        </div>
+        <script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+        <script type="text/javascript" src="js/jquery.cookie.js" ></script>
+        <script>
+            let cookieStr = $.cookie('cart');
+            if(!cookieStr){
+                $('.blank').css('display','block');
+            }else{
+                $('.table').css('display','block');
+               let cookieObj = $strToObj(cookieStr)
+                for(let key in cookieObj){
+                    let good = cookieObj[key];
+                    let str = `
+                    <tr class="index1">
+                    <td><img src="${good.src}" alt=""></td>
+                    <td>￥${good.price}</td>
+                    <td>
+                      <div class="show-2">
+                        <a href="javascript:;" class="plus1">-</a>
+                        <input type="text" value='${good.num}'>
+                        <a href="javascript:;" class="plus" >+</a>
+                      </div>
+                    </td>
+                    <td>￥${good.price * good.num}</td>
+                </tr>
+                    
+                    `;
+                    $('.tab').append(str);
+                }
+            }
+            $(".clear").click(function(){
+                $.removeCookie('cart', { path: '/' });
+                location.href = 'look.html';
+                $(this).css('display','none')
+            })
+
+
+            $('.as').mouseenter(function(){
+        $('.hide-1').animate({
+            right:'-20px',
+        });
+    }
+    )
+   
+    $('.as').mouseleave(function(){
+        $('.hide-1').animate({
+           right:'-100px', 
+       });
+    }
+    )
+    $('.as-1').mouseenter(function(){
+        $('.hide-2').animate({
+            right:'-20px',
+        });
+    }
+    )
+   
+    $('.as-1').mouseleave(function(){
+        $('.hide-2').animate({
+           right:'-100px', 
+       });
+    }
+    )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            function $strToObj(str){
+				if(!str){
+					return {};
+				}
+				return JSON.parse(str);
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script> 
+</body>
+</html>

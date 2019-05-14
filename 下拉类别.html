@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .da{
+            width: 100%;
+            height: 100px;
+          
+            
+        
+        }
+        .box{
+            width: 1000px;
+            height: 100px;
+            margin:0 auto;
+           
+        }
+    .box li{
+        float: left;
+        margin-left: 80px;
+    }
+    .tan{
+        width: 100%;
+        height:500px ;
+        background: #ccc;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        display: none;
+    }
+    .tan1{
+        width: 100%;
+        height:500px ;
+        background: #ccc;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        display: none;
+    }
+    .pp a{
+        height: 100px;
+        width: 100px;
+        display: block;
+        color: aqua;
+    }
+    </style>
+</head>
+<body>
+<div class="da">
+    <ul class="box">
+        <li>
+            <div class="pp">
+             
+                <a href="" >市中心</a>
+                <div class="tan">
+                    <ul class="xia">
+                        <li>简单的</li>
+                        <li>简单的</li>
+                        <li>简单的</li>
+                        <li>简单的</li>
+                        <li>简单的</li>
+                    </ul><ul>
+                        <li>简单的</li>
+                        <li>简单的</li>
+                        <li>简单的</li>
+                        <li>简单的</li>
+                        <li>简单的</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li> 
+                <div class="aa">
+                        <a href="" >市中心</a>
+                        <div class="tan1">
+                            <ul>
+                                <li>简单的</li>
+                                <li>简单的</li>
+                                <li>简单的</li>
+                                <li>简单的</li>
+                                <li>简单的</li>
+                            </ul>
+                        </div>
+                    </div>
+        </li>
+        <li> 
+            <div>
+                <div></div>
+                <a href="">市中心</a>
+            </div>
+        </li>
+        <li> 
+                <div>
+                    <div></div>
+                    <a href="">市中心</a>
+                </div>
+        </li>
+        <li> 
+                <div>
+                    <div></div>
+                    <a href="">市中心</a>
+                </div>
+        </li>
+        <li> 
+            <div>
+                <div></div>
+                <a href="">市中心</a>
+            </div>
+        </li>
+    </ul>
+</div>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $('.da').mouseenter(function(){
+            $('.da').css('background','#000')
+        })
+        $('.da').mouseleave(function(){
+            $('.da').css('background','#fff')
+        })
+     $('.pp').mouseenter(function(){
+        $('.tan').show(0,function(){
+            $('.da').css('background','#000')
+        });
+    }
+    )
+    $('.pp').mouseleave(function(){
+        $('.tan').hide(function(){
+            $('.da').css('background','#fff')
+        });
+    }
+    )
+    $('.aa').mouseenter(function(){
+        $('.tan1').show();
+    }
+    )
+    $('.aa').mouseleave(function(){
+        $('.tan1').hide();
+    }
+    )
+    </script>
+</body>
+</html>
